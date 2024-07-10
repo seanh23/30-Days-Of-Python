@@ -1,40 +1,62 @@
+# Day 2: 30 days of Python Programming
 
-# Variables in Python
+# Excercise 1 - Assigning Variables
+first_name = 'Sean'
+last_name = 'Harmond'
+full_name = 'Sean Harmond'
+country = "United States"
+city = 'Pulaski'
+age = 29
+year = 2024
+is_married = 'No'
+is_true = "Yes"
+is_light_on = 'Yes'
+first_name, last_name, full_name = 'Sean', 'Harmond', 'United States'
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
-person_info = {
-    'firstname':'Asabeneh', 
-    'lastname':'Yetayeh', 
-    'country':'Finland',
-    'city':'Helsinki'
-    }
 
-# Printing the values stored in the variables
+# Excercise 2 
+print(type(first_name)) # Str
+print(type(last_name)) # Str
+print(type(full_name)) # Str
+print(type(country)) # Str
+print(type(city)) # Str
+print(type(age)) # Int
+print(type(year)) # Int
+print(type(is_married)) # Str
+print(type(is_true)) # Str
+print(type(is_light_on)) # Str
 
-print('First name:', first_name)
-print('First name length:', len(first_name))
-print('Last name: ', last_name)
-print('Last name length: ', len(last_name))
-print('Country: ', country)
-print('City: ', city)
-print('Age: ', age)
-print('Married: ', is_married)
-print('Skills: ', skills)
-print('Person information: ', person_info)
+print(len(first_name)) # 4
+print(len(last_name)) # 7
+print(7-4) # Last name 3 characters more than first
 
-# Declaring multiple variables in one line
+num_one = 5
+num_two = 4
+variable_total = num_one + num_two
+print(variable_total) # 9
+variable_diff = num_one - num_two
+print(variable_diff) # 1
+variable_product = num_two * num_one
+print(variable_product) # 20
+variable_division = num_one / num_two
+print(variable_division) # 1.25
+variable_remainder = num_two % num_one
+print(variable_remainder) # 4
+variable_exp = num_one ** num_two
+print(variable_exp) # 625
+variable_floor_division = num_one // num_two
+print(variable_floor_division) # 1
 
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+# Radius of this circle is 30 meters
+area_of_circle = 3.14 * 30 ** 2
+print(area_of_circle) # 2826.0
+circumference_of_circle = 2 * 3.14 * 30
+print(circumference_of_circle) # 188.4
+radius = input('Enter the radius: ') # Asking user input for radius
+area = 3.14 * float(radius) ** 2 # Have to convert string radius to float radius
+print(area) # 2826.0
 
-print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
+first_name = input("Firs Name: ")
+last_name = input("Last Name: ")
+country = input("Country: ")
+age = input("Age: ")
